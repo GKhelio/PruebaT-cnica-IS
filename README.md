@@ -30,7 +30,7 @@ Estructura
   * _PersonController_
       * _Index_ -> Controlalor parametrizado, lista y busca al mismo tiempo
 
-- __Models__ --> En esta capa se encuntran los modelos de nuestra aplicación.
+- __Models__ --> En esta capa se encuentran los modelos de nuestra aplicación.
   * _Person_
   * _ErrorViewModel_
   * _PagedResultBase_
@@ -56,7 +56,7 @@ Tecnologías Usadas
 
 DataSet
 --------
-Para mi dataset he usado el siguiente patrón de objeto json
+Para mi dataset he usado la siguiente estructura de objeto json
 
     {
 
