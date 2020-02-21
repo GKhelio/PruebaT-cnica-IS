@@ -35,6 +35,17 @@ namespace PruebaTecnica.Controllers
                 // Get Persons
                 var data = _Person;
 
+                var result = new PagedResult<Person>();
+                if (data == null)
+                {
+                    result.CurrentPage = 0;
+                    result.PageSize = 0;
+                    result.RowCount = 0;
+                    result.PageCount = 0;
+                    result.Results = new List<Person>();
+                    return View(result);
+                }
+
                 // Contains Name
                 if (!string.IsNullOrEmpty(n))
                 {
@@ -50,7 +61,6 @@ namespace PruebaTecnica.Controllers
                 int pageSize = 15;
 
                 // Apply the pagination
-                var result = new PagedResult<Person>();
                 result.CurrentPage = page;
                 result.PageSize = pageSize;
                 result.RowCount = data.Count();

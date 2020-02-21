@@ -38,7 +38,6 @@ C:\Users\Rafa\Desktop\PruebaTécnica-IS\PruebaTecnica\bin\Debug\netcoreapp3.1\pe
 C:\Users\Black\Desktop\PruebaTécnica-IS\PruebaTecnica\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\Black\Desktop\PruebaTécnica-IS\PruebaTecnica\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\Black\Desktop\PruebaTécnica-IS\PruebaTecnica\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
-C:\Users\Black\Desktop\PruebaTécnica-IS\PruebaTecnica\bin\Debug\netcoreapp3.1\Utils\persons.json
 C:\Users\Black\Desktop\PruebaTécnica-IS\PruebaTecnica\bin\Debug\netcoreapp3.1\PruebaTecnica.exe
 C:\Users\Black\Desktop\PruebaTécnica-IS\PruebaTecnica\bin\Debug\netcoreapp3.1\PruebaTecnica.deps.json
 C:\Users\Black\Desktop\PruebaTécnica-IS\PruebaTecnica\bin\Debug\netcoreapp3.1\PruebaTecnica.runtimeconfig.json
@@ -82,3 +81,4 @@ C:\Users\Black\Desktop\PruebaTécnica-IS\PruebaTecnica\obj\Debug\netcoreapp3.1\P
 C:\Users\Black\Desktop\PruebaTécnica-IS\PruebaTecnica\obj\Debug\netcoreapp3.1\PruebaTecnica.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Black\Desktop\PruebaTécnica-IS\PruebaTecnica\obj\Debug\netcoreapp3.1\Razor\Views\Person\Index.cshtml.g.cs
 C:\Users\Black\Desktop\PruebaTécnica-IS\PruebaTecnica\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Pager\PagerViewComponent.cshtml.g.cs
+C:\Users\Black\Desktop\PruebaTécnica-IS\PruebaTecnica\bin\Debug\netcoreapp3.1\Utils\persons.json

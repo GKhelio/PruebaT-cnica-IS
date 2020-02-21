@@ -19,7 +19,7 @@ namespace PruebaTecnica.Utils
         { }
 
         /// <summary>
-        /// We get the list of Persons
+        /// Get the list of Persons
         /// </summary>
         /// <returns></returns>
         public static IList<Person> getPersons()
@@ -28,7 +28,7 @@ namespace PruebaTecnica.Utils
         }
 
         /// <summary>
-        /// We load the file to parse Person
+        /// Load the file to parse Person
         /// </summary>
         public static void loadFile()
         {
