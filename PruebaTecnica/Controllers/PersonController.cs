@@ -73,7 +73,7 @@ namespace PruebaTecnica.Controllers
 
                 return View(result);
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 return Error();
             }
