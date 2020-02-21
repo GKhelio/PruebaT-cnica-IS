@@ -5,6 +5,24 @@
 
 ----------
 
+Definición
+-----------
+Tenemos una libreta de direcciones de teléfono que se encuentra en un fichero de texto, contienen nombres de personas, nombres de ciudades y números de teléfono tal que:
+
+   Miguel Fernan | Tenerife | 971456789
+   
+   Cati Rier | Palma de Mallorca | 45673928
+   
+   Miguel Castán | Madrid | 2234234252
+   
+   Juan Padil | Lugo | 223432423
+   
+Se pide generar un fichero grande de texto sobre unas 200k registros y tener la posibilidad de buscar por nombre, apellidos, ciudad con las siguientes operaciones. Puedes usar [http://www.generatedata.com/]
+
+Listar(texto) y buscar(texto, cuidad).
+
+Para ello deberás escribir un programa que dado el fichero telefónico ejecute y responda a nuestras consultas. Recuerda que valoraremos la rapidez en la respuesta así que es necesario que busques la mejor forma de recorrer la libreta.
+
 Estructura
 ----------
 
@@ -19,7 +37,7 @@ Estructura
   
 - __Utils__ --> En ella encontramos los recursos que se han ido necesitando, todo ello para nutrir más nuestra aplicación.
   * _ReadFile_ -> Clase diseñada para la lectura del fichero
-  * _persons.json_
+  * _persons.json_ -> Fichero telefónico de 200k registros
   
 - __ViewComponents__ --> Se ha creado para inyectar al PagedResultBase la paginación en la View
 
