@@ -28,6 +28,7 @@ Estructura
 
 - __Controllers__ --> Encontramos la capa lógica de la aplicación e interpreta la acción del usuario con el modelo.
   * _PersonController_
+      * _Index_ -> Controlalor parametrizado, lista y busca al mismo tiempo
 
 - __Models__ --> En esta capa se encuntran los modelos de nuestra aplicación.
   * _Person_
