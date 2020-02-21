@@ -40,9 +40,9 @@ Estructura
   * _ReadFile_ -> Clase diseñada para la lectura del fichero
   * _persons.json_ -> Fichero telefónico de 200k registros
   
-- __ViewComponents__ --> Se ha creado para inyectar al PagedResultBase la paginación en la View
+- __ViewComponents__ --> Se ha creado para inyectar al PagedResultBase la paginación
 
-- __View__ --> Es el directorio donde se ubican todas las Views
+- __View__ --> Es el directorio donde se ubican todas las vistas de la aplicación
 
 Lógica
 -------
@@ -52,3 +52,22 @@ __Leemos el fichero --> Lista de Objetos --> Aceptamos Peticiones --> Ejecutamos
 Tecnologías Usadas
 ------------------
 - __[Newtonsoft](<https://www.newtonsoft.com/json>)__
+
+
+DataSet
+--------
+Para mi dataset he usado el siguiente patrón de objeto json
+
+    {
+
+        "Id": null, ya que genera un Guid automático,
+
+        "Name": "Rafael Moreno",
+
+        "City": "Córdoba",
+
+        "PhoneNumber": "+34123456789"
+ 
+    }
+
+El fichero se puede encontrar dentro de la carpeta **Utils**, con el nombre de **persons.json**
