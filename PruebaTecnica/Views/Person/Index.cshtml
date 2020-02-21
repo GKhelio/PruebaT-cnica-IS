@@ -1,0 +1,48 @@
+﻿@using PruebaTecnica.ViewComponents
+@model PagedResult<Person>
+@{
+    ViewData["Title"] = "Prueba Técnica IS";
+    var request = ViewContext.HttpContext.Request;
+}
+
+<div class="text-center">
+    <h1 class="display-4">Listado de Personas</h1>
+    <p>Desarrollado por Rafael Moreno Tejero.</p>
+</div>
+
+<form class="form-inline" action="/Person/Index">
+    <div class="form-group mx-sm-12 mb-2">
+        <label class="sr-only">Buscar por nombre</label>
+        <input type="text" name="n" class="form-control" value="@request.Query["n"]" size="50" placeholder="Buscar por nombre">
+    </div>
+    <div class="form-group mx-sm-3 mb-2">
+        <label class="sr-only">Buscar por ciudad</label>
+        <input type="text" class="form-control" name="c" placeholder="Buscar por ciudad" value="@request.Query["c"]">
+    </div>
+    @Html.AntiForgeryToken()
+    <button type="submit" class="btn btn-success mb-2">Buscar</button>
+</form>
+
+<div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Ciudad</th>
+                <th scope="col">Teléfono</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var p in Model.Results)
+            {
+                <tr>
+                    <td>@p.Name</td>
+                    <td>@p.City</td>
+                    <td>@p.PhoneNumber</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    @(await Component.InvokeAsync<PagerViewComponent>(Model))
+</div>
