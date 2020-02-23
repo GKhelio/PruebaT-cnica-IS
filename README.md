@@ -34,11 +34,14 @@ Estructura
   * _Person_
   * _ErrorViewModel_
   * _PagedResultBase_
-  * _PagedResult_
+  * _PagedResult_ -> Clase devuleto por el controlador
+  * _AFile_
+  * _TextFile_ -> Clase encargada de gestionar ficheros **.txt**
+  * _JsonFile_ -> Clase encargada de gestionar ficheros **.json**
   
-- __Utils__ --> En ella encontramos los recursos que se han ido necesitando, todo ello para nutrir más nuestra aplicación.
-  * _ReadFile_ -> Clase diseñada para la lectura del fichero
-  * _persons.json_ -> Fichero telefónico de 200k registros
+- __Utils__ --> En ella encontramos los recursos que se han ido necesitando, todo ello para nutrir nuestra aplicación.
+  * _dataset.txt_ -> Fichero telefónico de 200k registros
+  * _dataset.json_ -> Fichero telefónico de 200k registros
   
 - __ViewComponents__ --> Se ha creado para inyectar al PagedResultBase la paginación
 
@@ -54,20 +57,10 @@ Tecnologías Usadas
 - __[Newtonsoft](<https://www.newtonsoft.com/json>)__
 
 
-DataSet
---------
-Para mi dataset he usado la siguiente estructura de objeto json
+Comentarios
+------------
+Con la gestión utilizada de lectura de ficheros telefónicos, podremos gestionar cualquier tipo de fichero telefónico con la siguiente estructura:
 
-    {
-
-        "Id": null, ya que genera un Guid automático,
-
-        "Name": "Rafael Moreno",
-
-        "City": "Córdoba",
-
-        "PhoneNumber": "+34123456789"
- 
-    }
-
-El fichero se puede encontrar dentro de la carpeta **Utils**, con el nombre de **persons.json**
+     Name        -> Nombre y apellidos de la persona, tipo: string,
+     City        -> Nombre de la ciudad, tipo: string,
+     PhoneNumber -> Número de teléfono, tipo: string
