@@ -6,19 +6,37 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using PruebaTecnica.Models;
-using PruebaTecnica.Utils;
 
 namespace PruebaTecnica.Controllers
 {
     public class PersonController : Controller
     {
         private readonly ILogger<PersonController> _logger;
-        private readonly IList<Person> _Person;
+        private static IList<Person> _Person;
 
         public PersonController(ILogger<PersonController> logger)
         {
             _logger = logger;
-            _Person = ReadFile.getPersons();
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="persons"></param>
+        [NonAction]
+        public static void setPersons(IList<Person> persons)
+        {
+            _Person = persons;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        [NonAction]
+        public static IList<Person> getPerson()
+        {
+            return _Person;
         }
 
         /// <summary>
@@ -49,13 +67,13 @@ namespace PruebaTecnica.Controllers
                 // Contains Name
                 if (!string.IsNullOrEmpty(n))
                 {
-                    data = data.Where(x => x.Name.ToString().Contains(n)).ToList();
+                    data = data.Where(x => x.Name.Contains(n, StringComparison.OrdinalIgnoreCase)).ToList();
                 }
 
                 // Contains City
                 if (!string.IsNullOrEmpty(c))
                 {
-                    data = data.Where(x => x.City.ToString().Contains(c)).ToList();
+                    data = data.Where(x => x.City.Contains(c, StringComparison.OrdinalIgnoreCase)).ToList();
                 }
 
                 int pageSize = 15;

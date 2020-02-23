@@ -7,7 +7,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using PruebaTecnica.Utils;
+using PruebaTecnica.Controllers;
+using PruebaTecnica.Models;
 
 namespace PruebaTecnica
 {
@@ -16,7 +17,16 @@ namespace PruebaTecnica
         public static void Main(string[] args)
         {
             // Read File
-            ReadFile.loadFile();
+            using (TextFile fileT = new TextFile($@"{Directory.GetCurrentDirectory()}/Utils/", "dataset.txt"))
+            {
+                // Assign the list of people to controller
+                PersonController.setPersons(fileT.LoadFile());
+            }
+
+            //using (JsonFile fileJ = new JsonFile($@"{Directory.GetCurrentDirectory()}/Utils/", "dataset.json"))
+            //{
+            //    PersonController.setPersons(fileJ.LoadFile());
+            //}
 
             CreateHostBuilder(args).Build().Run();
         }

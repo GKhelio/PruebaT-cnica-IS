@@ -52,21 +52,17 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Black\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Black\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Black\\Desktop\\PruebaTécnica-IS\\PruebaTecnica\\PruebaTecnica.csproj",
+      "projectUniqueName": "C:\\Users\\Black\\Documents\\GitHub\\PruebaTecnica-IS\\PruebaTecnica\\PruebaTecnica.csproj",
       "projectName": "PruebaTecnica",
-      "projectPath": "C:\\Users\\Black\\Desktop\\PruebaTécnica-IS\\PruebaTecnica\\PruebaTecnica.csproj",
+      "projectPath": "C:\\Users\\Black\\Documents\\GitHub\\PruebaTecnica-IS\\PruebaTecnica\\PruebaTecnica.csproj",
       "packagesPath": "C:\\Users\\Black\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Black\\Desktop\\PruebaTécnica-IS\\PruebaTecnica\\obj\\",
+      "outputPath": "C:\\Users\\Black\\Documents\\GitHub\\PruebaTecnica-IS\\PruebaTecnica\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
         "C:\\Users\\Black\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
