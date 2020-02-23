@@ -55,6 +55,7 @@ __Leemos el fichero --> Lista de Objetos --> Aceptamos Peticiones --> Ejecutamos
 Tecnologías Usadas
 ------------------
 - __[Newtonsoft](<https://www.newtonsoft.com/json>)__
+- __SDK de .NET Core 3.1__
 
 
 Comentarios
